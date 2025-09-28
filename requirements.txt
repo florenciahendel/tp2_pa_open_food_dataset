@@ -1,0 +1,6 @@
+pymongo
+requests
+pandas
+plotly
+python-dotenv
+tqdm
