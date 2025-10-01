@@ -30,7 +30,7 @@ coll = db[COLL_NAME]
 
 
 def normalize_product(d):
-    """Extrae y normaliza campos útiles del JSON de Open Food Facts."""
+    #Extrae y normaliza campos útiles del JSON de Open Food Facts.
     if not isinstance(d, dict):
         return None
     out = {}
@@ -105,7 +105,7 @@ def load_from_api(pages=1, page_size=1000, batch_size=500):
             bulk_upsert(batch)
 
 
-"""def load_from_dump(file_path, batch_size=500):
+def load_from_dump(file_path, batch_size=500):
     # detecta si es newline-delimited JSON o un array JSON
     with gzip.open(file_path, "rt", encoding="utf-8") as fh:
         sample = fh.read(2048)
@@ -130,7 +130,7 @@ def load_from_api(pages=1, page_size=1000, batch_size=500):
                 bulk_upsert(batch)
                 batch = []
         if batch:
-            bulk_upsert(batch)"""
+            bulk_upsert(batch)
 
 
 def main():
@@ -138,7 +138,7 @@ def main():
     parser.add_argument("--mode", choices=["api", "dump"], default="api", help="api (prueba) o dump (archivo .json.gz)")
     parser.add_argument("--pages", type=int, default=1)
     parser.add_argument("--page_size", type=int, default=1000)
-    #parser.add_argument("--file", type=str, help="ruta al .json.gz (modo dump)")
+    parser.add_argument("--file", type=str, help="ruta al .json.gz (modo dump)")
     parser.add_argument("--batch", type=int, default=500)
     args = parser.parse_args()
 
@@ -147,11 +147,10 @@ def main():
 
     if args.mode == "api":
         load_from_api(pages=args.pages, page_size=args.page_size, batch_size=args.batch)
-    """else:
+    else:
         if not args.file:
             parser.error("--file es obligatorio en modo dump")
-        load_from_dump(args.file, batch_size=args.batch)"""
-
+        load_from_dump(args.file, batch_size=args.batch)
 
 if __name__ == "__main__":
     main()
