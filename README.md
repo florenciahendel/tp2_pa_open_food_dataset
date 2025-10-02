@@ -11,7 +11,7 @@ Proyecto que descarga y almacena productos de Open Food Facts en MongoDB y ofrec
 ## Instalación rápida
 1. Clonar:
    ```bash
-   git clone https://github.com/TU_USUARIO/tp2_pa_open_food_dataset.git
+   git clone https://github.com/florenciahendel/tp2_pa_open_food_dataset.git
    cd tp2_pa_open_food_dataset
 
 2. Crear venv e instalar dependencias. Correr los siguientes comandos en la consola, posicionados en la carpeta raíz del proyecto:
