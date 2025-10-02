@@ -27,10 +27,10 @@ Proyecto que descarga y almacena productos de Open Food Facts en MongoDB y ofrec
    docker run --name mongo-foodfacts -p 27017:27017 -d mongo:6.0
 
 3. Levantar MongoDB (opción local):  
-   - Asegurarse de que la ruta de MongoDB esté agregada al path.  
-   - Crear el archivo _.env_ (usar el _.env.example_ agregado en el proyecto como guía).  
-   - Verificar que exista la carpeta ```C:\data\db```; si no existe, crearla.  
-   La base se va a crear al momento de correr la notebook.  
+- Asegurarse de que la ruta de MongoDB esté agregada al path.  
+- Crear el archivo _.env_ (usar el _.env.example_ agregado en el proyecto como guía).  
+- Verificar que exista la carpeta ```C:\data\db```; si no existe, crearla.  
+La base se va a crear al momento de correr la notebook.  
 
 
 ### Configuración en MacOS / Linux
@@ -46,18 +46,18 @@ Proyecto que descarga y almacena productos de Open Food Facts en MongoDB y ofrec
    docker run --name mongo-foodfacts -p 27017:27017 -d mongo:6.0
 
 3. Levantar MongoDB local:  
-   - Instalar MongoDB con Homebrew:
-      ```bash
-      brew tap mongodb/brew
-      brew install mongodb-community@6.0
+- Instalar MongoDB con Homebrew:
+   ```bash
+   brew tap mongodb/brew
+   brew install mongodb-community@6.0
 
-   - Iniciar el servicio:
-      ```bash
-      brew services start mongodb-community@6.0
+- Iniciar el servicio:
+   ```bash
+   brew services start mongodb-community@6.0
 
-   - Crear el archivo _.env_ (usar el _.env.example_ agregado en el proyecto como guía).
-   - En macOS/Linux Mongo usa ```/usr/local/var/mongodb```.
-   - No es necesario crear ```C:\data\db```.
+- Crear el archivo _.env_ (usar el _.env.example_ agregado en el proyecto como guía).
+- En macOS/Linux Mongo usa ```/usr/local/var/mongodb```.
+- No es necesario crear ```C:\data\db```.
 
 
 ### Ejecución del dashboard:  
