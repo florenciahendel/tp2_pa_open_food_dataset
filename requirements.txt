@@ -4,3 +4,5 @@ pandas
 plotly
 python-dotenv
 tqdm
+nbformat>=4.2.0
+ipykernel
