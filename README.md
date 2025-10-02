@@ -24,7 +24,7 @@ Proyecto que descarga y almacena productos de Open Food Facts en MongoDB y ofrec
    ```bash
    docker run --name mongo-foodfacts -p 27017:27017 -d mongo:6.0
 
-4. Levantar MongoDB (opción local):
+4. Levantar MongoDB (opción local):  
    A. Asegurarse de que la ruta de MongoDB esté agregada al path.  
    B. Crear el archivo _.env_ (usar el _.env.example_ agregado en el proyecto como guía).  
    C. Verificar que exista la carpeta ```C:\data\db```; si no existe, crearla.  
