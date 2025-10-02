@@ -30,7 +30,7 @@ Proyecto que descarga y almacena productos de Open Food Facts en MongoDB y ofrec
    C. Verificar que exista la carpeta ```C:\data\db```; si no existe, crearla.  
    La base se va a crear al momento de correr la notebook.
 
-5. Ejecución del dashboard:
+5. Ejecución del dashboard:  
 Abrir el archivo ```dashboard.ipynb```  
 Se puede ejecutar todo el dashboard de una vez (Con la opción _Run All_), o celda por celda (Haciendo click en el botón de _Play_ al lado de cada celda).  
 Siempre ejecutar la primera celda, porque es la que realiza los imports y la conexión a la DB.
